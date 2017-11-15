@@ -1,0 +1,31 @@
+#search-form
+  .control-label
+    padding 0
+  .label-item
+    label
+      &:hover
+        cursor pointer
+      span
+        font-weight 400
+    input[type="radio"]
+      display none
+      &:checked
+        +
+          span
+            background #20804f
+            padding 5px
+            color white
+
+.img-preview
+  width 120px
+  display inline-block
+  vertical-align top
+  .thumbnail
+    width 100%
+#result
+  div
+    width 25%
+    display inline-block
+    .thumbnail
+      max-width 100%
+      max-height 100px

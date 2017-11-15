@@ -1,0 +1,50 @@
+#search-form .control-label {
+  padding: 0;
+}
+#search-form .label-item label:hover {
+  cursor: pointer;
+}
+#search-form .label-item label span {
+  font-weight: 400;
+}
+#search-form .label-item input[type="radio"] {
+  display: none;
+}
+#search-form .label-item input[type="radio"]:checked + span {
+  background: #20804f;
+  padding: 5px;
+  color: #fff;
+}
+.img-preview {
+  width: 120px;
+  display: inline-block;
+  vertical-align: top;
+}
+.img-preview .thumbnail {
+  width: 100%;
+}
+#result div {
+  width: 25%;
+  display: inline-block;
+}
+#result div .thumbnail {
+  max-width: 100%;
+  max-height: 100px;
+}
+.bottom-nav li {
+  display: inline-block;
+  padding-right: 30px;
+}
+.bottom-nav li .label {
+  display: inline-block;
+}
+.auto_service_category li {
+  display: inline-block;
+  padding: 0 10px;
+}
+.fa.fa-star,
+.fa.fa-star-o {
+  color: #ffc600;
+}
+
+/*# sourceMappingURL=style.css.map */

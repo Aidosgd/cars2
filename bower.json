@@ -1,0 +1,33 @@
+{
+  "name": "landata.dev",
+  "description": "mini board",
+  "main": "",
+  "authors": [
+    "Aidos <aidosgd@gmail.com>"
+  ],
+  "license": "MIT",
+  "moduleType": [],
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^2.2.1",
+    "bootstrap": "^3.3.6",
+    "jquery.maskMoney": "^3.0.2",
+    "SlidesJS": "^3.0.4",
+    "AdminLTE": "admin-lte#^2.3.3",
+    "jquery-validation": "jquery.validate#^1.13.0",
+    "jquery-colorbox": "colorbox#^1.6.3",
+    "font-awesome": "fontawesome#^4.6.1",
+    "jquery.inputmask": "^3.3.1",
+    "vue": "^1.0.26",
+    "bootstrap-select": "^1.11.0",
+    "vue-resource": "^0.9.3"
+  }
+}

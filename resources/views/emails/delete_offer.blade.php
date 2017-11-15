@@ -1,0 +1,1 @@
+{{ $offer->user->name }} объявления {{ $offer->title }} удаленно

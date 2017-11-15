@@ -1,0 +1,1 @@
+{{ $offer->user->name }} удалил {{ $offer->title }} объявления
