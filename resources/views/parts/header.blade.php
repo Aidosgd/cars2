@@ -7,7 +7,7 @@ if(isset($id)){
 ?>
 <div class="logo">
     <a href="{{ url('/') }}">
-        <img src="/css/images/logo1.svg" alt="CZSale" title="CZSale" />
+        <img src="/css/images/logo1.svg" alt="Cars2.kz" title="Cars2.kz" />
     </a>
 </div>
 
@@ -78,7 +78,7 @@ if(isset($id)){
                         <li class="divider"></li>
                         <li>
                             <div class="form-group">
-                                <button onclick="location.href='/socialite/facebook'" class="btn btn-default btn-block btn-social btn-facebook"><i class="fa fa-facebook"></i> Войти через Facebook</button>
+                                {{--<button onclick="location.href='/socialite/facebook'" class="btn btn-default btn-block btn-social btn-facebook"><i class="fa fa-facebook"></i> Войти через Facebook</button>--}}
                                 {{--<button onclick="location.href='#'" class="btn btn-default btn-block btn-social btn-twitter"><i class="fa fa-twitter"></i> Sign in with Twitter</button>--}}
                                 <button onclick="location.href='/socialite/vkontakte'" class="btn btn-default btn-block btn-social btn-vk"><i class="fa fa-vk"></i> Войти через VK</button>
                             </div>
@@ -86,16 +86,16 @@ if(isset($id)){
                     </ul>
                 </li>
             @else
-            <li class="dropdown">
-                <a href="{{ url('/profile') }}" class="dropdown-toggle" data-toggle="dropdown">{{ Auth::user()->name }} <b class="caret"></b></a>
-                <ul class="dropdown-menu" style="padding: 15px;min-width: 250px;">
-                    <li><a href="{{ url('/profile') }}"><i class="fa fa-btn"></i>Личный кабинет</a></li>
-                    <li><a href="{{ url('/profile/addoffer') }}"><i class="fa fa-btn"></i>Добавить объявление</a></li>
-                    <li><a href="{{ url('/profile/viewoffer') }}"><i class="fa fa-btn"></i>Мои объявление <span class="badge">{{ $offerCount }}</span></a></li>
-                    <li><a href="{{ url('/profile/view_auto_service') }}"><i class="fa fa-btn"></i>Мои автосервисы <span class="badge">{{ $autoServiceCount }}</span></a></li>
-                    <li><a href="{{ url('/logout') }}"><i class="fa fa-btn fa-sign-out"></i>Выход</a></li>
-                </ul>
-            </li>
+                <li class="dropdown">
+                    <a href="{{ url('/profile') }}" class="dropdown-toggle" data-toggle="dropdown">{{ Auth::user()->name }} <b class="caret"></b></a>
+                    <ul class="dropdown-menu" style="padding: 15px;min-width: 250px;">
+                        <li><a href="{{ url('/profile') }}"><i class="fa fa-btn"></i>Личный кабинет</a></li>
+                        <li><a href="{{ url('/profile/addoffer') }}"><i class="fa fa-btn"></i>Добавить объявление</a></li>
+                        <li><a href="{{ url('/profile/viewoffer') }}"><i class="fa fa-btn"></i>Мои объявление <span class="badge">{{ $offerCount }}</span></a></li>
+                        <li><a href="{{ url('/profile/view_auto_service') }}"><i class="fa fa-btn"></i>Мои автосервисы <span class="badge">{{ $autoServiceCount }}</span></a></li>
+                        <li><a href="{{ url('/logout') }}"><i class="fa fa-btn fa-sign-out"></i>Выход</a></li>
+                    </ul>
+                </li>
             @endif
         </ul>
     </div>
